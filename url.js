@@ -1,0 +1,11 @@
+const url=require('url');
+const websiteUrl='http://43.250.40.63/Login.aspx?ReturnUrl=%2f';
+const parsedUrl=new URL(websiteUrl);
+console.log("FULL URL:",parsedUrl.href);
+console.log("PROTOCOL:",parsedUrl.protocol);
+console.log("HOSTNAME:",parsedUrl.hostname);
+console.log("PATHNAME:",parsedUrl.pathname);
+console.log("SEARCH PARAMS:",parsedUrl.search);
+console.log("ID PARAMS:",parsedUrl.searchParams.get('id'));
+console.log("TYPE PARAM:",parsedUrl.searchParams.get('type'));
+console.log("HASH:",parsedUrl.hash);
